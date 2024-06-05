@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-top: 0;
+      color: gray;
+      font-size: 13px;
+      font-weight: bolder;
+    }
+
+    .title {
+      border-bottom: 1px dotted gray;
+      padding-left: 10px;
+    }
+
+    div {
+      padding-left: 10px;
+    }
+
+    select {
+      width: 450px;
+    }
+
+    h4 {
+      margin-bottom: 5px;
+    }
+
+    table,
+    td,
+    th {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 15px;
+      table-layout: fixed;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    .gray {
+      background-color: gainsboro;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="title">
+    <h2>Market Research Survey</h4>
+      <p>Please take a few moments to complete this satisfaction survey</p>
+  </div>
+  <div>
+    <h4>What is your age range?</h4>
+    <select name="" id="">
+      <option value="">18-24</option>
+      <option value="">25-34</option>
+      <option value="">35-50</option>
+      <option value="">50+</option>
+    </select>
+    <h4>What is your yearly income range?</h4>
+    <select name="" id="">
+      <option value="">$0-$25,000</option>
+      <option value="">$25,001-$50,000</option>
+      <option value="">$50,001-$100,000$</option>
+      <option value="">$100,000+</option>
+    </select>
+    <h4>Gender Identity</h4>
+    <input type="radio" name="gender"> Male <br>
+    <input type="radio" name="gender"> Female <br>
+    <input type="radio" name="gender"> Nonbinary <br>
+    <input type="radio" name="gender"> Other <br>
+    <input type="text" style="margin-left: 25px;">
+    <h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+    <input type="checkbox"> Product 1 <br>
+    <input type="checkbox"> Product 2 <br>
+    <input type="checkbox"> Product 3 <br>
+    <h4>How often would you use our new product?</h4>
+    <input type="radio" name="f"> Daily <br>
+    <input type="radio" name="f"> Weekly <br>
+    <input type="radio" name="f"> Monthly <br>
+    <h4>What would you pay for the new product?</h4>
+    $ <input type="text" style="width: 120px;"> . <input type="text" style="width: 20px;">
+    <h4>What features would you like to see in the new product.</h4>
+    <textarea name="" id="" style="width: 95%; height: 250px;"></textarea>
+    <h6>Please rate your level of agreement with the following statements.</h6>
+    <table style="width: 95%; margin-bottom: 15px;">
+      <tr>
+        <td class="gray"></td>
+        <td class="gray">Strongly Disagree</td>
+        <td class="gray">Disagree</td>
+        <td class="gray">Agree</td>
+        <td class="gray">Strong Agree</td>
+      </tr>
+      <tr>
+        <th>Our products are priced fairly.</th>
+        <td><input type="radio" name="fairly">1</td>
+        <td><input type="radio" name="fairly">2</td>
+        <td><input type="radio" name="fairly">3</td>
+        <td><input type="radio" name="fairly">4</td>
+      </tr>
+      <tr>
+        <th class="gray">Our products are high quality.</th>
+        <td class="gray"><input type="radio" name="quality">1</td>
+        <td class="gray"><input type="radio" name="quality">2</td>
+        <td class="gray"><input type="radio" name="quality">3</td>
+        <td class="gray"><input type="radio" name="quality">4</td>
+      </tr>
+      <tr>
+        <th>You would recommend our product to a friend or cowoker.</th>
+        <td><input type="radio" name="rec">1</td>
+        <td><input type="radio" name="rec">2</td>
+        <td><input type="radio" name="rec">3</td>
+        <td><input type="radio" name="rec">4</td>
+      </tr>
+    </table>
+    <button>Submit</button>
+  </div>
+</body>
+
+</html>
