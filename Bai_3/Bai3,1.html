@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="BTVN.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    th {
+      background-color: red;
+    }
+
+
+    .name,
+    .sothich,
+    .email {
+      color: blue;
+    }
+
+    .name,
+    .email {
+      float: right;
+    }
+
+    button {
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th colspan="4">
+        <center>
+          Sở thích của bạn
+        </center>
+      </th>
+    </tr>
+    <tr>
+      <td class="name">Họ và tên</td>
+      <td colspan="4"><input type="text" placeholder="Nhập họ và tên"></td>
+    </tr>
+    <tr>
+      <td class="email">Email</td>
+      <td colspan="3"><input type="email" placeholder="Nhập email"></td>
+    </tr>
+    <tr>
+      <td rowspan="3" class="sothich">
+        Sở thích
+      </td>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Thể Thao</label style="color: orange;">
+      </td>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Âm nhạc</label style="color: orange;">
+      </td>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Đọc sách</label style="color: orange;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Lướt web</label style="color: orange;">
+      </td>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Chơi game</label style="color: orange;">
+      </td>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Điện ảnh</label style="color: orange;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <input type="checkbox" name="Sở thích">
+        <label style="color: orange;">Du lịch</label style="color: orange;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+      </td>
+      <td colspan="4">
+        <button>Gửi thông tin</button>
+        <button>Nhập lại</button>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
