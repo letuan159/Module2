@@ -1,0 +1,50 @@
+<!-- inline: Sử dụng trực tiếp trong thẻ
+      Internal: sử dụng trong cùng file html
+      external: sử dụng file .css -->
+
+<!-- div cha sẽ ăn css cho thẻ con
+ div h2 {} => tat ca h2 trong div se css-->
+
+ <!-- 
+ #cha h2 sẽ ăn hết
+ #cha > h2 sẽ chỉ css h2 của cha
+ p+span chỉ ăn những thằng ngay sau 
+ #cha~span sẽ ăn tất cả thằng span đi sau-->
+
+
+ <!-- Pseudo class css 
+ focus: dành cho input khi ấn vào đổi màu hoặc khi nhập đổi màu các thứ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* #cha~span{
+      color: red;
+    } */
+    span+p{
+      color: red;
+    }
+    input:focus {
+      background-color: blue;
+    }
+  </style>
+ </head>
+ <body>
+  <div id="cha">
+    <span>abc</span>
+    <span>abc</span>
+  </div>
+  <span>abc</span>
+  <span>bcd</span>
+  <p>abdc</p>
+  <span>aaa</span>
+  <p>abbb</p>
+  <p>aaa</p>
+  <input type="text" >
+  <input type="button" value="">
+ </body>
+ </html>
