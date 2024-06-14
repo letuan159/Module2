@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      height: 1000px;
+    }
+
+    .nav-bar {
+      position: fixed;
+      width: 100%;
+      height: 80px;
+      z-index: 1;
+      background-color: lightgray;
+    }
+
+    .headlink {
+      position: relative;
+      top: 90px;
+      width: 100%;
+      height: 40px;
+      background-color: lightgray;
+    }
+
+    .content {
+      position: relative;
+      top: 100px;
+      width: 100%;
+      height: 1000px;
+    }
+
+    .content .listvid {
+      position: absolute;
+      height: 100%;
+      width: 30%;
+      left: 2%;
+    }
+
+    .content .video {
+      position: absolute;
+      right: 8%;
+      width: 50%;
+      height: 50%;
+    }
+
+    .content .noidung {
+      position: absolute;
+      right: 8%;
+      width: 50%;
+      height: 50%;
+      top: 50%;
+    }
+
+    .nav-bar .logo {
+      display: flex;
+      width: 40%;
+      height: 80px;
+      padding-left: 100px;
+      align-items: center;
+    }
+
+    .nav-bar .logo .logoimg {
+      height: 80%;
+      border-radius: 50px;
+      box-shadow: -2px 7px rgba(245, 255, 118, 0.38);
+    }
+
+    .headlink .rlinklist:not(:last-child) {
+      border-right: 1px solid black;
+    }
+
+    .headlink ul {
+      display: flex;
+      justify-content: center;
+      height: 80%;
+      align-items: center;
+    }
+
+    .headlink .rlinklist {
+      list-style: none;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    .rlinklist .rlink {
+      text-decoration: none;
+      color: black;
+    }
+
+    .ulvid {
+      width: 100%;
+      height: 100%;
+      list-style: none;
+      padding: 0;
+    }
+
+    .livid {
+      height: 25%;
+      width: 100%;
+      background-color: lightgray;
+    }
+
+    .livid img {
+      width: 70%;
+      height: 80%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .livid p {
+      text-align: center;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .livid a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .footer {
+      position: relative;
+      top: 110px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- nav -->
+    <div class="nav-bar">
+      <div class="logo">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/021/433/431/original/jewelry-logo-design-ring-with-diamond-logotype-elegant-modern-jewelry-store-logo-template-vector.jpg"
+          alt="" class="logoimg">
+      </div>
+    </div>
+
+    <!-- headlink -->
+    <div class="headlink">
+      <ul>
+        <li class="rlinklist">
+          <a href="" class="rlink">Phim Hoạt Hình</a>
+        </li>
+        <li class="rlinklist">
+          <a href="" class="rlink">Phim hoạt hình yêu thích</a>
+        </li>
+        <li class="rlinklist">
+          <a href="" class="rlink">Nhân vật hoạt hình</a>
+        </li>
+        <li class="rlinklist">
+          <a href="" class="rlink">Góp ý</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+      <div class="listvid">
+        <ul class="ulvid">
+          <li class="livid">
+            <a href="https://www.youtube.com/embed/ILdhhd27BjU" target="cinema">
+              <img src="https://i.ytimg.com/vi/JJ7wGPdhxnA/maxresdefault.jpg" alt="">
+              <p>Doraemon movie 39: Nobita Và Mặt Trăng Phiêu Lưu Ký</p>
+            </a>
+          <li class="livid">
+            <a href="https://www.youtube.com/embed/pJ5WYb30zVk" target="cinema">
+              <img src="https://th.bing.com/th/id/R.7a155c011b86a8f33c1a1d421143e3ff?rik=DacCapyilAu5sA&pid=ImgRaw&r=0"
+                alt="">
+              <p>Doraemon movie 40: Nobita Và Những Người Bạn Khủng Long Mới</p>
+            </a>
+          <li class="livid">
+            <a href="https://www.youtube.com/embed/1SW4FYy2mCE" target="cinema">
+              <img src="https://th.bing.com/th/id/OIP.myJqZxCRQ4hYknbWBDPD9gHaEK?rs=1&pid=ImgDetMain" alt="">
+              <p>Doraemon movie 38: Nobita Và Chuyến Thám Hiểm Nam Cực Kachi Kochi</p>
+            </a>
+          <li class="livid">
+            <a href="https://www.youtube.com/embed/1eC38b_VPCo" target="cinema">
+              <img
+                src="https://1.bp.blogspot.com/-ZWzg2rId1jk/W88zfeMgbAI/AAAAAAAAGX4/hECH4PquzoA2G2O7TbYik2Sk85-sBK-NQCLcBGAs/s1600/fc6e3978180f4dd87c0ac95bbdc36e20.jpg"
+                alt="">
+              <p>Doraemon movie 36: Nobita và tân nước nhật thời nguyên thủy</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/ILdhhd27BjU" name="cinema" title="Doraemon" frameborder="1"
+          style="width: 100%; height: 500px;"></iframe>
+      </div>
+
+      <div class="noidung">
+        <p style="margin-top: 30px;">Movie Doraemon cực hay <3</p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <p style="height: 40px; display: flex; justify-content: center; align-items: center; font-size: 20px;">Le Tuaannnnnnnnn</p>
+    </div>
+  </div>
+</body>
+
+</html>
