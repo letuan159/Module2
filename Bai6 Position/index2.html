@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .container {
+      width: 100%;
+    }
+
+    .nav-bar {
+      display: flex;
+      width: 100%;
+      height: 80px;
+      background-color: pink;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+    }
+
+    .container .main {
+      height: 660px;
+      width: 100%;
+      background-color: antiquewhite;
+      position: relative;
+      top: 80px;
+    }
+
+    .backgr {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+
+    .descr {
+      width: 25%;
+      height: 100%;
+      background-color: rgba(245, 40, 145, 0.8);
+      position: absolute;
+      top: 0;
+    }
+
+    .logo {
+      display: flex;
+      width: 40%;
+      height: 80px;
+      padding-left: 100px;
+      align-items: center;
+    }
+
+    .menu {
+      display: flex;
+      width: 60%;
+      padding-right: 150px;
+    }
+
+    .logoimg {
+      background-size: cover;
+      height: 90%;
+      background-position: center;
+      border-radius: 50px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin-left: auto;
+    }
+
+    li:not(:last-child) {
+      border-right: 1px solid black;
+    }
+
+    li{
+      display: flex;
+      align-items: center;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-bar">
+      <div class="logo">
+        <img class="logoimg"
+          src="https://static.vecteezy.com/system/resources/previews/021/433/431/original/jewelry-logo-design-ring-with-diamond-logotype-elegant-modern-jewelry-store-logo-template-vector.jpg"
+          alt="">
+      </div>
+      <div class="menu">
+        <ul>
+          <li>Mờ e me</li>
+          <li>Nờ u nu</li>
+          <li>Menu đó</li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <img src="https://toigingiuvedep.vn/wp-content/uploads/2021/04/hinh-anh-nen-con-meo-cute.jpg" alt=""
+        class="backgr">
+      <div class="descr">decription</div>
+    </div>
+    <div class="footer" style="height: 1000px; width: 100%; background-color: aqua;"></div>
+  </div>
+</body>
+
+</html>
