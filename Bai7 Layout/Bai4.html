@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      width: 50%;
+      height: 700px;
+    }
+    .header{
+      border: 1px solid black;
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;  
+    }
+    .logo{
+      width: 50%;
+      padding: 20px;
+    }
+    .nav{
+      width: 50%;
+      text-align: end;
+      padding: 20px;
+    }
+
+    .content {
+      position: relative;
+      width: 100%;
+      height: calc(100% - 80px);
+    }
+
+    .above {
+      width: 100%;
+      height: 70%;
+    }
+
+    .row{
+      display: flex;
+      width: 100%;
+      height: calc(25% - 10px);
+      margin: 10px 0;
+      justify-content: space-between;
+    }
+
+    .under{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 30%;
+    }
+
+    .col{
+      border: 1px solid black;
+      width: calc(25% - 5px);
+      height: 75%;
+    }
+
+    .under div {
+      border: 1px solid black;
+      width: 30%;
+      height: calc(100%-10px);
+      margin: 5px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer{
+      border: 1px solid black;
+      position: relative;
+      top: 10px;
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Logo</div>
+      <div class="nav">Nav</div>
+    </div>
+    <div class="content">
+      <div class="above">
+        <div class="row">
+          <div class="col">1</div>
+          <div class="col">2</div>
+          <div class="col">3</div>
+          <div class="col">4</div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+        <div class="row">
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col"></div>
+        </div>
+      </div>
+      <div class="under">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+      </div>
+    </div>
+    <div class="footer">Footer</div>
+  </div>
+</body>
+</html>
