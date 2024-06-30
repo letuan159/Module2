@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.nav-logo {
+  width: 60px;
+  border-radius: 90px;
+}
+
+.navbar {
+  background-color: black;
+}
+
+/* Tệp CSS tùy chỉnh hoặc trong thẻ <style> */
+.dropdown-menu .dropdown-item {
+  border-bottom: 1px solid #ddd; /* Đường viền giữa các mục */
+}
+
+.dropdown-menu .dropdown-item:last-child {
+  border-bottom: none; /* Loại bỏ đường viền của mục cuối cùng */
+}
+
+.slide-img {
+  height: 650px;
+}
+
+.content {
+  position: relative;
+  top: 86px;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Điều chỉnh giá trị alpha để thay đổi độ tối */
+  z-index: 1;
+}
+.carousel-caption {
+  position: absolute;
+  display: flex;
+  bottom: 35%; /* Điều chỉnh giá trị này để thay đổi khoảng cách từ dưới lên */
+  left: 150px;
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.carousel-caption h5 {
+  font-size: 50px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-caption a {
+  display: block;
+  font-size: 25px;
+  color: #fff;
+  text-align: left;
+  margin-left: 0;
+  text-decoration: none;
+  margin-top: 15px;
+  width: 200px;
+  font-weight: 250;
+}
+
+.carousel-caption a:hover {
+  color: lightgray;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1100; /* Đảm bảo nút chuyển slide hiển thị trên carousel-caption */
+}
+
+.row {
+  background-color: red;
+}
+
+.decr {
+  width: 100%;
+  height: 200px;
+  background-color: whitesmoke;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.decr h4 {
+  font-size: 30px;
+}
+
+.decr p {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.decr-img {
+  display: grid;
+  width: 100%;
+  grid-template-areas: 
+  "1 2 3"
+  "4 5 6";
+}
+
+.decrimg {
+  width: 100%;
+}
+
+/* Hover effect */
+
+.decr-img .decrimg {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển đổi và bóng đen */
+}
+
+.decr-img .decrimg:hover {
+  transform: scale(1.05); /* Phóng to ảnh khi hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Bóng đen với độ mờ */
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    margin-left: 30px;
+  }
+  .navbar-toggler {
+    order: -1; /* Đảo thứ tự button để nó nằm bên trái */
+    margin-left: 20px;
+  }
+}
+

@@ -1,0 +1,10 @@
+/* Hover effect */
+
+.decr-img .decrimg {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng chuyển đổi và bóng đen */
+}
+
+.decr-img .decrimg:hover {
+  transform: scale(1.05); /* Phóng to ảnh khi hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Bóng đen với độ mờ */
+}
